@@ -1,5 +1,6 @@
 package barqexp.mersattech.firstkotlinproject.data
 
+import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class Movie(
@@ -31,7 +32,10 @@ data class Movies(
         @SerializedName("total_pages")
         var totalPages: Int = 0,
         @SerializedName("results")
-        var results: List<Movie>? = null)
+        var results: List<Movie>? = null,
+        @Expose(serialize = false)
+        var type: String
+)
 
 
 
