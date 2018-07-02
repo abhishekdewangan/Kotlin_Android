@@ -9,21 +9,21 @@ import android.view.View
 import android.view.ViewGroup
 import barqexp.mersattech.firstkotlinproject.R
 import barqexp.mersattech.firstkotlinproject.data.Movies
-import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.MoviesContentAdapter
+import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.MoviesFeedAdapter
 import barqexp.mersattech.firstkotlinproject.ui.main_screen.viewmodels.HomeViewModel
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
-import kotlinx.android.synthetic.main.home_fragment.*
+import kotlinx.android.synthetic.main.home_feed_fragment.*
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch
 
 class HomeFragment : Fragment() {
     private lateinit var homeViewModel: HomeViewModel
-    private val recyclerAdapter: MoviesContentAdapter = MoviesContentAdapter()
+    private val recyclerAdapter: MoviesFeedAdapter = MoviesFeedAdapter()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         fetchMovies()
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        return inflater.inflate(R.layout.home_fragment, null)
+        return inflater.inflate(R.layout.home_feed_fragment, null)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

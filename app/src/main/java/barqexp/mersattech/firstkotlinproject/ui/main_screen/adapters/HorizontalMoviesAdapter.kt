@@ -8,7 +8,7 @@ import barqexp.mersattech.firstkotlinproject.R
 import barqexp.mersattech.firstkotlinproject.data.Movie
 import kotlinx.android.extensions.LayoutContainer
 
-class MoviesFeedRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class HorizontalMoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var contentList: List<Movie> = listOf();
 

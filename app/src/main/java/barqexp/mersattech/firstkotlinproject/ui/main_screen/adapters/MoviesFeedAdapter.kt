@@ -2,7 +2,6 @@ package barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters
 
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,15 +10,14 @@ import barqexp.mersattech.firstkotlinproject.data.Movies
 import barqexp.mersattech.firstkotlinproject.utils.Keys
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
 import kotlinx.android.extensions.LayoutContainer
-import kotlinx.android.synthetic.main.item_content_type.*
-import kotlinx.android.synthetic.main.item_horizontal_movie.*
+import kotlinx.android.synthetic.main.item_movie_feed.*
 
 
-class MoviesContentAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     public var movies: List<Movies> = listOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_content_type, null, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_movie_feed, null, false)
         return HorizontalMovieViewHolder(view)
     }
 
@@ -39,7 +37,7 @@ class MoviesContentAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     class HorizontalMovieViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
-        private val adapter = MoviesFeedRecyclerAdapter();
+        private val adapter = HorizontalMoviesAdapter();
         init {
             recyclerHorizontalContent.layoutManager = LinearLayoutManager(containerView.context, LinearLayoutManager.HORIZONTAL, false )
             recyclerHorizontalContent.addItemDecoration(RecyclerItemDecorator(RecyclerItemDecorator.ORIENTATION_TYPE_HORIZONTAL))
