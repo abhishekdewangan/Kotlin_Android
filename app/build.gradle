@@ -46,6 +46,8 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:1.1.0"
 
     implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 }
 
 apply plugin: 'org.jetbrains.kotlin.android.extensions'
