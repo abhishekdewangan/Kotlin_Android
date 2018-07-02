@@ -53,6 +53,8 @@ class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 Keys.MOVIE_TYPE_POPULAR -> containerView.context.getString(R.string.popular_movies)
                 Keys.MOVIE_TYPE_NOW_PLAYING -> containerView.context.getString(R.string.in_theaters)
                 Keys.MOVIE_TYPE_UPCOMING -> containerView.context.getString(R.string.coming_soon)
+                Keys.TV_SHOW_TYPE_POPULAR -> containerView.context.getString(R.string.popular_shows)
+                Keys.TV_SHOW_TYPE_TOP_RATED -> containerView.context.getString(R.string.top_rated_shows)
                 else -> ""
             }
             tvContentType.setText(typeStr)

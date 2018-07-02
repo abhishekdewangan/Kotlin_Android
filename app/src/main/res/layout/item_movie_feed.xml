@@ -31,7 +31,7 @@
             android:layout_marginTop="@dimen/margin16dp"
             android:text="See All"
             android:textAllCaps="true"
-            android:textColor="#03A9F4"
+            android:textColor="#128bb5"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
