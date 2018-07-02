@@ -9,14 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import barqexp.mersattech.firstkotlinproject.R
-import barqexp.mersattech.firstkotlinproject.data.Movies
 import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.MoviesFeedAdapter
 import barqexp.mersattech.firstkotlinproject.ui.main_screen.viewmodels.HomeViewModel
 import barqexp.mersattech.firstkotlinproject.utils.Keys
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
 import kotlinx.android.synthetic.main.home_feed_fragment.*
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.launch
 
 class HomeFragment : Fragment() {
     private lateinit var homeViewModel: HomeViewModel
@@ -53,7 +50,7 @@ class HomeFragment : Fragment() {
         homeViewModel.isContentLoading().observe(this, Observer {
             if (it!!) {
                 progressBar.visibility = View.VISIBLE
-            } else{
+            } else {
                 progressBar.visibility = View.GONE
             }
         })

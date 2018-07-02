@@ -7,8 +7,8 @@ import barqexp.mersattech.firstkotlinproject.R
 
 class RecyclerItemDecorator(private val orientationType: String) : RecyclerView.ItemDecoration() {
     companion object {
-        val ORIENTATION_TYPE_HORIZONTAL: String = "Horizontal"
-        val ORIENTATION_TYPE_VERTICAL: String = "Vertical"
+        const val ORIENTATION_TYPE_HORIZONTAL: String = "Horizontal"
+        const val ORIENTATION_TYPE_VERTICAL: String = "Vertical"
     }
 
     override fun getItemOffsets(outRect: Rect?, view: View?, parent: RecyclerView?, state: RecyclerView.State?) {
