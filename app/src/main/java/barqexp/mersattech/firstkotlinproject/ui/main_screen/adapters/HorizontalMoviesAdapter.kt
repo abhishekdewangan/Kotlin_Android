@@ -30,7 +30,7 @@ class HorizontalMoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
         }
     }
 
-    public fun setData(movies: List<Movie>) {
+    fun setData(movies: List<Movie>) {
         this.movies = movies
         notifyDataSetChanged()
     }
@@ -38,7 +38,7 @@ class HorizontalMoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
     class FeedContentViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
         fun bindData(movie: Movie) {
-            Picasso.get().load(Keys.IMAGE_BASE_URL+movie.poster_path).into(imgMoviePoster)
+            Picasso.get().load(Keys.IMAGE_BASE_URL + movie.poster_path).into(imgMoviePoster)
             tvMovieTitle.setText("${movie.voteAverage}")
         }
     }
