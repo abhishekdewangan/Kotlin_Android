@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import barqexp.mersattech.firstkotlinproject.R
+import barqexp.mersattech.firstkotlinproject.data.Content
 import barqexp.mersattech.firstkotlinproject.data.Contents
 import barqexp.mersattech.firstkotlinproject.utils.Keys
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
@@ -13,8 +14,9 @@ import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_movie_feed.*
 
 
-class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    public var movies: List<Contents> = listOf()
+class ContentsFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    private var contents: List<Contents> = listOf()
+    open var contentItemClickListener: ContentItemClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_movie_feed, null, false)
@@ -22,33 +24,34 @@ class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return movies.size
+        return contents.size
     }
 
+
     fun setData(movies: List<Contents>) {
-        this.movies = movies
+        this.contents = movies
         notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if(holder is HorizontalMovieViewHolder) {
-            holder.setData(movies.get(position))
+            holder.setData(contents.get(position))
         }
     }
 
-    class HorizontalMovieViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
+    inner class HorizontalMovieViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
         private val adapter = HorizontalMoviesAdapter();
         init {
             recyclerHorizontalContent.layoutManager = LinearLayoutManager(containerView.context, LinearLayoutManager.HORIZONTAL, false )
             recyclerHorizontalContent.addItemDecoration(RecyclerItemDecorator(RecyclerItemDecorator.ORIENTATION_TYPE_HORIZONTAL))
             recyclerHorizontalContent.adapter = adapter
+            tvSeeAll.setOnClickListener({contentItemClickListener?.seeAllContentWithType(contents.get(adapterPosition).type)})
+            adapter.contentItemClickListener = contentItemClickListener
         }
 
-        fun setData(movieType: Contents) {
-
-            adapter.setData(movieType.results)
-
-            val typeStr: String = when (movieType.type) {
+        fun setData(contentType: Contents) {
+            adapter.setData(contentType.results)
+            val typeStr: String = when (contentType.type) {
                 Keys.MOVIE_TYPE_TOP_RATED -> containerView.context.getString(R.string.top_rated_movies)
                 Keys.MOVIE_TYPE_POPULAR -> containerView.context.getString(R.string.popular_movies)
                 Keys.MOVIE_TYPE_NOW_PLAYING -> containerView.context.getString(R.string.in_theaters)
@@ -62,5 +65,9 @@ class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
     }
 
+    interface ContentItemClickListener {
+        fun seeAllContentWithType(type: String)
+        fun contentClicked(content: Content)
+    }
 
 }

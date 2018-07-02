@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.item_horizontal_movie.*
 class HorizontalMoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var contents: List<Content> = listOf();
+    var contentItemClickListener: ContentsFeedAdapter.ContentItemClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_horizontal_movie, null, false)
@@ -35,8 +36,10 @@ class HorizontalMoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
         notifyDataSetChanged()
     }
 
-    class FeedContentViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
-
+    inner class FeedContentViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
+        init {
+            containerView?.setOnClickListener({contentItemClickListener?.contentClicked(contents.get(adapterPosition))})
+        }
         fun bindData(content: Content) {
             Picasso.get().load(Keys.IMAGE_BASE_URL + content.poster_path).into(imgMoviePoster)
             tvMovieTitle.setText("${content.voteAverage}")

@@ -2,6 +2,7 @@ package barqexp.mersattech.firstkotlinproject.ui.main_screen.fragments
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -9,15 +10,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import barqexp.mersattech.firstkotlinproject.R
-import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.MoviesFeedAdapter
+import barqexp.mersattech.firstkotlinproject.data.Content
+import barqexp.mersattech.firstkotlinproject.ui.contents_screen.ContentsActivity
+import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.ContentsFeedAdapter
 import barqexp.mersattech.firstkotlinproject.ui.main_screen.viewmodels.HomeViewModel
 import barqexp.mersattech.firstkotlinproject.utils.Keys
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
 import kotlinx.android.synthetic.main.home_feed_fragment.*
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), ContentsFeedAdapter.ContentItemClickListener {
     private lateinit var homeViewModel: HomeViewModel
-    private val recyclerAdapter: MoviesFeedAdapter = MoviesFeedAdapter()
+    private val recyclerAdapter: ContentsFeedAdapter = ContentsFeedAdapter()
     private var contentType: String = ""
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -38,6 +41,7 @@ class HomeFragment : Fragment() {
         moviesRecyclerView.layoutManager = LinearLayoutManager(context)
         moviesRecyclerView.addItemDecoration(RecyclerItemDecorator(RecyclerItemDecorator.ORIENTATION_TYPE_VERTICAL))
         moviesRecyclerView.adapter = recyclerAdapter
+        recyclerAdapter.contentItemClickListener = this
     }
 
     private fun subscribeToContents() {
@@ -55,4 +59,16 @@ class HomeFragment : Fragment() {
             }
         })
     }
+
+    override fun seeAllContentWithType(type: String) {
+        val intent = Intent(context, ContentsActivity::class.java)
+        val bundle = Bundle()
+        bundle.putString(Keys.BUNDLE_CONTENT_TYPE, type)
+        intent.putExtras(bundle)
+        startActivity(intent)
+    }
+
+    override fun contentClicked(content: Content) {
+    }
+
 }
