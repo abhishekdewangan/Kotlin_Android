@@ -3,13 +3,9 @@ package barqexp.mersattech.firstkotlinproject.ui.main_screen.activities
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import barqexp.mersattech.firstkotlinproject.R
 import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.HomePagerAdapter
-import barqexp.mersattech.firstkotlinproject.ui.main_screen.viewmodels.HomeViewModel
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.launch
 
 
 class MainActivity : AppCompatActivity() {

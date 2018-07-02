@@ -1,8 +1,8 @@
 package barqexp.mersattech.firstkotlinproject.ui.main_screen.viewmodels
 
 import android.app.Application
+import android.arch.lifecycle.AndroidViewModel
 import android.util.Log
-import androidx.lifecycle.AndroidViewModel
 import barqexp.mersattech.firstkotlinproject.data.Movies
 import barqexp.mersattech.firstkotlinproject.network.MoviesServices
 import barqexp.mersattech.firstkotlinproject.network.RetrofitService

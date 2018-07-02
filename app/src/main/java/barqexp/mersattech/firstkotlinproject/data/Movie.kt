@@ -32,7 +32,7 @@ data class Movies(
         @SerializedName("total_pages")
         var totalPages: Int = 0,
         @SerializedName("results")
-        var results: List<Movie>? = null,
+        var results: List<Movie> = listOf(),
         @Expose(serialize = false)
         var type: String
 )
