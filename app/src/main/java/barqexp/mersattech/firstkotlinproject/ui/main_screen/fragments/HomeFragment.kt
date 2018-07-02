@@ -28,6 +28,7 @@ class HomeFragment : Fragment() {
 
         contentType = arguments?.getString(Keys.BUNDLE_CONTENT_TYPE, "")!!
         subscribeToContents()
+        subscribeToContentLoading()
         return inflater.inflate(R.layout.home_feed_fragment, null)
     }
 
@@ -45,6 +46,16 @@ class HomeFragment : Fragment() {
     private fun subscribeToContents() {
         homeViewModel.fetchContent(contentType)?.observe(this, Observer {
             recyclerAdapter.setData(it!!)
+        })
+    }
+
+    private fun subscribeToContentLoading() {
+        homeViewModel.isContentLoading().observe(this, Observer {
+            if (it!!) {
+                progressBar.visibility = View.VISIBLE
+            } else{
+                progressBar.visibility = View.GONE
+            }
         })
     }
 }

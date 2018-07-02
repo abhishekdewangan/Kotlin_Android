@@ -14,6 +14,7 @@ import kotlinx.coroutines.experimental.launch
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private val moviesServices: MoviesServices = RetrofitService.create()
     private val contentMap = HashMap<String, MutableLiveData<List<Movies>>>()
+    private val isLoadingLiveData = MutableLiveData<Boolean>()
 
     private suspend fun fetchMovies() {
         val movies = arrayListOf<Movies>()
@@ -34,13 +35,15 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             topRatedMovies.type = Keys.MOVIE_TYPE_TOP_RATED;
             movies.add(topRatedMovies)
             contentMap.get(Keys.CONTENT_TYPE_MOVIES)?.postValue(movies)
+            isLoadingLiveData.postValue(false)
         } catch (exception: Exception) {
             Log.e("fetchMovies", "fetch movie exception : ${exception.toString()}")
         }
     }
 
-    private suspend fun fetchTvShows(){
-       val tvShows = arrayListOf<Movies>()
+    private suspend fun fetchTvShows() {
+        val tvShows = arrayListOf<Movies>()
+        isLoadingLiveData.postValue(true)
         try {
             val popularShows: Movies = moviesServices.getShows(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
             popularShows.type = Keys.TV_SHOW_TYPE_POPULAR;
@@ -50,8 +53,9 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             topRatedShows.type = Keys.TV_SHOW_TYPE_TOP_RATED;
             tvShows.add(topRatedShows)
             contentMap.get(Keys.CONTENT_TYPE_SHOWS)?.postValue(tvShows)
+            isLoadingLiveData.postValue(false)
         } catch (exception: Exception) {
-            Log.e("fetchMovies", "fetch movie exception : ${exception.toString()}")
+            Log.e("fetchShows", "exception while fetching shows : ${exception.toString()}")
         }
     }
 
@@ -65,6 +69,10 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             }
         }
         return contentMap.get(contentType)
+    }
+
+    fun isContentLoading() : LiveData<Boolean> {
+        return isLoadingLiveData
     }
 
 }
