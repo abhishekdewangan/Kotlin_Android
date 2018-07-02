@@ -5,7 +5,7 @@ import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.util.Log
-import barqexp.mersattech.firstkotlinproject.data.Movies
+import barqexp.mersattech.firstkotlinproject.data.Contents
 import barqexp.mersattech.firstkotlinproject.network.MoviesServices
 import barqexp.mersattech.firstkotlinproject.network.RetrofitService
 import barqexp.mersattech.firstkotlinproject.utils.Keys
@@ -13,27 +13,27 @@ import kotlinx.coroutines.experimental.launch
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private val moviesServices: MoviesServices = RetrofitService.create()
-    private val contentMap = HashMap<String, MutableLiveData<List<Movies>>>()
+    private val contentMap = HashMap<String, MutableLiveData<List<Contents>>>()
     private val isLoadingLiveData = MutableLiveData<Boolean>()
 
     private suspend fun fetchMovies() {
-        val movies = arrayListOf<Movies>()
+        val movies = arrayListOf<Contents>()
         try {
-            val upcomingMovies: Movies = moviesServices.getMovies(Keys.PARAMS_UPCOMING, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            upcomingMovies.type = Keys.MOVIE_TYPE_UPCOMING;
-            movies.add(upcomingMovies)
+            val upcomingContents: Contents = moviesServices.getMovies(Keys.PARAMS_UPCOMING, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
+            upcomingContents.type = Keys.MOVIE_TYPE_UPCOMING;
+            movies.add(upcomingContents)
 
-            val nowPlayingMovies: Movies = moviesServices.getMovies(Keys.PARAMS_NOW_PLAYING, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            nowPlayingMovies.type = Keys.MOVIE_TYPE_NOW_PLAYING;
-            movies.add(nowPlayingMovies)
+            val nowPlayingContents: Contents = moviesServices.getMovies(Keys.PARAMS_NOW_PLAYING, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
+            nowPlayingContents.type = Keys.MOVIE_TYPE_NOW_PLAYING;
+            movies.add(nowPlayingContents)
 
-            val popularMovies: Movies = moviesServices.getMovies(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN,1).await()
-            popularMovies.type = Keys.MOVIE_TYPE_POPULAR;
-            movies.add(popularMovies)
+            val popularContents: Contents = moviesServices.getMovies(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN,1).await()
+            popularContents.type = Keys.MOVIE_TYPE_POPULAR;
+            movies.add(popularContents)
 
-            val topRatedMovies: Movies = moviesServices.getMovies(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            topRatedMovies.type = Keys.MOVIE_TYPE_TOP_RATED;
-            movies.add(topRatedMovies)
+            val topRatedContents: Contents = moviesServices.getMovies(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
+            topRatedContents.type = Keys.MOVIE_TYPE_TOP_RATED;
+            movies.add(topRatedContents)
             contentMap.get(Keys.CONTENT_TYPE_MOVIES)?.postValue(movies)
             isLoadingLiveData.postValue(false)
         } catch (exception: Exception) {
@@ -42,14 +42,14 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private suspend fun fetchTvShows() {
-        val tvShows = arrayListOf<Movies>()
+        val tvShows = arrayListOf<Contents>()
         isLoadingLiveData.postValue(true)
         try {
-            val popularShows: Movies = moviesServices.getShows(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
+            val popularShows: Contents = moviesServices.getShows(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
             popularShows.type = Keys.TV_SHOW_TYPE_POPULAR;
             tvShows.add(popularShows)
 
-            val topRatedShows: Movies = moviesServices.getShows(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
+            val topRatedShows: Contents = moviesServices.getShows(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
             topRatedShows.type = Keys.TV_SHOW_TYPE_TOP_RATED;
             tvShows.add(topRatedShows)
             contentMap.get(Keys.CONTENT_TYPE_SHOWS)?.postValue(tvShows)
@@ -59,7 +59,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    fun fetchContent(contentType: String) : LiveData<List<Movies>>? {
+    fun fetchContent(contentType: String) : LiveData<List<Contents>>? {
         if (!contentMap.contains(contentType))
              contentMap.put(contentType, MutableLiveData())
         launch {

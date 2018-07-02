@@ -33,9 +33,9 @@ class HomePagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
-            0 -> "Movies"
+            0 -> "Contents"
             1 -> "TV-Series"
-            else -> "Movies"
+            else -> "Contents"
         }
     }
 

@@ -22,7 +22,7 @@ class Keys {
         const val LANGUAGE_US_EN = "en-US";
 
         /* CONTENT TYPES*/
-        const val CONTENT_TYPE_MOVIES = "movies"
+        const val CONTENT_TYPE_MOVIES = "contents"
         const val CONTENT_TYPE_SHOWS = "shows"
 
 

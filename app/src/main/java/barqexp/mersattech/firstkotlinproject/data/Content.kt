@@ -3,7 +3,7 @@ package barqexp.mersattech.firstkotlinproject.data
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class Movie(
+data class Content(
         var adult: Boolean = false,
         @SerializedName("backdrop_path")
         var backdropPath: String = "",
@@ -26,13 +26,13 @@ data class Movie(
         @SerializedName("vote_count")
         var voteCount: Int = 0)
 
-data class Movies(
+data class Contents(
         @SerializedName("total_results")
         var totalResults: Int = 0,
         @SerializedName("total_pages")
         var totalPages: Int = 0,
         @SerializedName("results")
-        var results: List<Movie> = listOf(),
+        var results: List<Content> = listOf(),
         @Expose(serialize = false)
         var type: String
 )

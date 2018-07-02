@@ -8,7 +8,7 @@ import barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters.HomePagerAd
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     val pagerAdapter: HomePagerAdapter = HomePagerAdapter(supportFragmentManager)
 
     override fun onCreate(savedInstanceState: Bundle?) {

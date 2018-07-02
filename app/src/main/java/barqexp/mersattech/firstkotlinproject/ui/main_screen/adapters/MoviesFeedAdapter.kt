@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import barqexp.mersattech.firstkotlinproject.R
-import barqexp.mersattech.firstkotlinproject.data.Movies
+import barqexp.mersattech.firstkotlinproject.data.Contents
 import barqexp.mersattech.firstkotlinproject.utils.Keys
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
 import kotlinx.android.extensions.LayoutContainer
@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.item_movie_feed.*
 
 
 class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    public var movies: List<Movies> = listOf()
+    public var movies: List<Contents> = listOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_movie_feed, null, false)
@@ -25,7 +25,7 @@ class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return movies.size
     }
 
-    fun setData(movies: List<Movies>) {
+    fun setData(movies: List<Contents>) {
         this.movies = movies
         notifyDataSetChanged()
     }
@@ -44,7 +44,7 @@ class MoviesFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             recyclerHorizontalContent.adapter = adapter
         }
 
-        fun setData(movieType: Movies) {
+        fun setData(movieType: Contents) {
 
             adapter.setData(movieType.results)
 
