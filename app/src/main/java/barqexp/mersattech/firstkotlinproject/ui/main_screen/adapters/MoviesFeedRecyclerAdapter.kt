@@ -32,7 +32,7 @@ class MoviesFeedRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(
         notifyDataSetChanged()
     }
 
-    class FeedContentViewHolder constructor(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
+    class FeedContentViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
         init {
 
         }

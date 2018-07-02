@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FirstKotlinProject</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="in_theaters">In Theaters</string>
+    <string name="popular_movies">Most Popular Movies</string>
+    <string name="coming_soon">Coming Soon</string>
 </resources>

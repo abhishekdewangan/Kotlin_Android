@@ -2,14 +2,17 @@ package barqexp.mersattech.firstkotlinproject.ui.main_screen.adapters
 
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import barqexp.mersattech.firstkotlinproject.R
 import barqexp.mersattech.firstkotlinproject.data.Movies
+import barqexp.mersattech.firstkotlinproject.utils.Keys
 import barqexp.mersattech.firstkotlinproject.utils.RecyclerItemDecorator
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_content_type.*
+import kotlinx.android.synthetic.main.item_horizontal_movie.*
 
 
 class MoviesContentAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -24,7 +27,7 @@ class MoviesContentAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return movies.size
     }
 
-    public fun setData(movies: List<Movies>) {
+    fun setData(movies: List<Movies>) {
         this.movies = movies
         notifyDataSetChanged()
     }
@@ -43,8 +46,19 @@ class MoviesContentAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             recyclerHorizontalContent.adapter = adapter
         }
 
-        fun setData(movieList: Movies) {
-           adapter.setData(movieList.results)
+        fun setData(movieType: Movies) {
+
+            adapter.setData(movieType.results)
+
+            val typeStr: String = when (movieType.type) {
+                Keys.MOVIE_TYPE_TOP_RATED -> containerView.context.getString(R.string.top_rated_movies)
+                Keys.MOVIE_TYPE_POPULAR -> containerView.context.getString(R.string.popular_movies)
+                Keys.MOVIE_TYPE_NOW_PLAYING -> containerView.context.getString(R.string.in_theaters)
+                Keys.MOVIE_TYPE_UPCOMING -> containerView.context.getString(R.string.coming_soon)
+                else -> ""
+            }
+            tvContentType.setText(typeStr)
+
         }
     }
 
