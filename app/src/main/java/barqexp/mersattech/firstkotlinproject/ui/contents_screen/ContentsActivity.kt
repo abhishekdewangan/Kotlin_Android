@@ -1,5 +1,7 @@
 package barqexp.mersattech.firstkotlinproject.ui.contents_screen
 
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
@@ -11,15 +13,21 @@ import kotlinx.android.synthetic.main.layout_content_list.*
 
 class ContentsActivity : AppCompatActivity() {
     lateinit var contentType: String
+    lateinit var contentFilterType: String
     lateinit var adapter: ContentsAdapter
+    lateinit var viewModel: ContentsViewModel
+    private var isRefresh:Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_content_list)
         contentType = intent.extras.getString(Keys.BUNDLE_CONTENT_TYPE)
+        contentFilterType = intent.extras.getString(Keys.BUNDLE_CONTENT_FILTER_TYPE)
         initialSetup()
         setAdapter()
-
+        initViewModel()
+        subscribeToContents()
+        subscribeToLoadingState()
     }
 
     private fun initialSetup() {
@@ -40,6 +48,13 @@ class ContentsActivity : AppCompatActivity() {
             setNavigationOnClickListener({ onBackPressed() })
         }
 
+        refreshLayout.setOnRefreshListener {  }
+
+    }
+
+    private fun initViewModel() {
+        val viewModelFactory = ContentsViewModel.Factory(application, contentType, contentFilterType)
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(ContentsViewModel::class.java)
     }
 
     private fun setAdapter() {
@@ -47,5 +62,26 @@ class ContentsActivity : AppCompatActivity() {
         recyclerContents.layoutManager = LinearLayoutManager(this)
         recyclerContents.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         recyclerContents.adapter = adapter
+    }
+
+    private fun subscribeToContents() {
+        viewModel.getContents(isRefresh).observe(this, Observer {
+            if (null != it) {
+                adapter.setData(it.toList())
+            }
+        })
+    }
+
+    private fun subscribeToLoadingState() {
+        viewModel.isLoadingLiveData.observe(this, Observer {
+            if (null != it) {
+                when (it) {
+                    Keys.LOADING_FRESH -> refreshLayout.isRefreshing = true
+                    Keys.LOADING_NEXT -> adapter.addLoader(true)
+                    Keys.STOP_LOADING -> refreshLayout.isRefreshing = false
+                    Keys.STOP_PAGINATION -> adapter.addLoader(false)
+                }
+            }
+        })
     }
 }

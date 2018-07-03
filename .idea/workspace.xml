@@ -7,16 +7,11 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3f46ea7-ea2b-44f8-93cd-68cf83cff83a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/line_divider_white.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_content_list.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -26,12 +21,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HorizontalMoviesAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HorizontalMoviesAdapter.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/MoviesFeedAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/ContentsFeedAdapter.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,36 +52,27 @@
       <file leaf-file-name="ContentsActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+            <state relative-caret-position="91">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
-                <element signature="e#66#457#0" expanded="true" />
+                <element signature="e#66#545#0" expanded="true" />
+                <element signature="e#1284#2127#0" expanded="false" />
+                <element signature="e#1376#1412#0" expanded="true" />
+                <element signature="e#1452#1486#0" expanded="true" />
+                <element signature="e#1530#1561#0" expanded="true" />
+                <element signature="e#1602#1633#0" expanded="true" />
+                <element signature="e#1675#1708#0" expanded="true" />
+                <element signature="e#1752#1787#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_content_list.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_content_list.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="ContentsAdapter.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_content_verticle.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="345">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -99,8 +85,8 @@
       <list>
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin File" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -2230,24 +2216,25 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HomePagerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/home_feed_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/RecyclerItemDecorator.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/data/Content.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_back.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/RecyclerItemAnimator.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/line_divider_white.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/MoviesFeedAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HorizontalMoviesAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/ContentsFeedAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_content_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt" />
       </list>
     </option>
   </component>
@@ -2287,7 +2274,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
@@ -2306,6 +2292,13 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="firstkotlinproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="firstkotlinproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
@@ -2337,25 +2330,16 @@
               <item name="firstkotlinproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="main_screen" type="462c0819:PsiDirectoryNode" />
-              <item name="activities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="firstkotlinproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="main_screen" type="462c0819:PsiDirectoryNode" />
-              <item name="adapters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="firstkotlinproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="main_screen" type="462c0819:PsiDirectoryNode" />
               <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="firstkotlinproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="main_screen" type="462c0819:PsiDirectoryNode" />
+              <item name="viewmodels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
@@ -2366,31 +2350,15 @@
             </path>
             <path>
               <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="Kotlin First Project" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2401,7 +2369,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="QDT4C17C05001994" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="DEBUGGABLE_DEVICE" value="bnd_al10-QDT4C17C05001994" />
+    <property name="DEBUGGABLE_DEVICE" value="huawei-bnd_al10-QDT4C17C05001994" />
     <property name="DEBUGGABLE_PROCESS" value="barqexp.mersattech.firstkotlinproject" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
@@ -2677,7 +2645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530554320735</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="created contents activity to show selected contents list">
+      <created>1530560367758</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530560367758</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2685,29 +2660,28 @@
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5411932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13494319" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4005682" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24798061" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24798061" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19971469" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1690341" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35511363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.640625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16962843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16882068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13352273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android WiFi ADB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036931816" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2715,6 +2689,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -2758,36 +2733,41 @@
     <MESSAGE value="added loader" />
     <MESSAGE value="made val as const in Keys file" />
     <MESSAGE value="changed Movies file name to  to Contents" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed Movies file name to  to Contents" />
+    <MESSAGE value="created contents activity to show selected contents list" />
+    <option name="LAST_COMMIT_MESSAGE" value="created contents activity to show selected contents list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt</url>
+          <line>17</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt</url>
+          <line>19</line>
           <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>RetrofitService.create().getMovies(contentFilterType, Keys.API_KEY, Keys.LANGUAGE_US_EN, page)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>RetrofitService.create().getMovies(contentFilterType, Keys.API_KEY, Keys.LANGUAGE_US_EN, page).await()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>topRatedMovies</expression-string>
         <language-id>kotlin</language-id>
@@ -2796,6 +2776,45 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding>
+            <element signature="e#66#545#0" expanded="true" />
+            <element signature="e#1284#2127#0" expanded="false" />
+            <element signature="e#1376#1412#0" expanded="true" />
+            <element signature="e#1452#1486#0" expanded="true" />
+            <element signature="e#1530#1561#0" expanded="true" />
+            <element signature="e#1602#1633#0" expanded="true" />
+            <element signature="e#1675#1708#0" expanded="true" />
+            <element signature="e#1752#1787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_content_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2808,9 +2827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="e#73#380#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2868,14 +2885,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
@@ -2887,28 +2904,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_movie_feed.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -2922,22 +2931,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_feed_fragment.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HomePagerAdapter.kt">
@@ -2964,49 +2965,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/data/Content.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_back.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_horizontal_movie.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="42" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/RecyclerItemAnimator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/RecyclerItemAnimator.kt" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/27.1.1/ad225a74247e675db0b05ea4f8b17202acbb7f9d/recyclerview-v7-27.1.1-sources.jar!/android/support/v7/widget/DividerItemDecoration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -3016,283 +2993,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/line_divider_white.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="38" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-27/android.jar!/android/content/Intent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="348" column="11" lean-forward="false" selection-start-line="348" selection-start-column="11" selection-end-line="348" selection-end-column="11" />
-          <folding>
-            <marker date="1515745426947" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1515745426947" expanded="false" signature="139:685" ph="..." />
-            <marker date="1515745426947" expanded="true" signature="3054:3072" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="3196:3214" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="8576:8594" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="11716:11734" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="11848:11866" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="12730:12748" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="16493:16511" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="17444:17462" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="21769:21787" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="21899:21917" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="22047:22065" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="22181:22199" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="23639:23657" ph="/**...*/" />
-            <marker date="1515745426947" expanded="false" signature="25949:25960" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="25996:26002" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="26031:26042" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="26078:26084" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="26118:26129" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="26165:26171" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="26214:26225" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="26261:26267" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="26324:26335" ph=" { " />
-            <marker date="1515745426947" expanded="true" signature="26371:26377" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="26459:26511" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="26587:26639" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="26736:26788" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="26815:26826" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="26862:26868" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="26901:26912" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="26948:26954" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="27026:27078" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="27178:27230" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="27309:27361" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="27367:27385" ph="/**...*/" />
-            <marker date="1515745426947" expanded="true" signature="27475:27527" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="27612:27664" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="27742:27794" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="27825:27836" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="27872:27878" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="27904:27915" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="27951:27957" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="27992:28003" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28039:28045" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28076:28087" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28123:28129" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28158:28169" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28205:28211" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28259:28270" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28306:28312" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28369:28380" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28416:28422" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="28488:28540" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="28589:28600" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28636:28642" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28682:28693" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28729:28735" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28768:28779" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28815:28821" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28856:28867" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="28903:28909" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="28967:28978" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="29014:29020" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="29062:29073" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="29109:29115" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="29156:29167" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="29203:29209" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="29281:29333" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="29396:29448" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="29514:29566" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="29629:29681" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="29740:29751" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="29787:29793" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="29856:29908" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="29974:30026" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="30095:30147" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="30194:30205" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="30241:30247" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="30306:30317" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="30353:30359" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="30429:30481" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="30544:30596" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="30686:30738" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="30797:30808" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="30844:30850" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="30920:30972" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="31040:31092" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="31172:31224" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="31280:31291" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31327:31333" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="31383:31394" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31430:31436" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="31488:31499" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31535:31541" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="31591:31602" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31638:31644" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="31692:31703" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31739:31745" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="31795:31806" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31842:31848" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="31900:31911" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="31947:31953" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32007:32018" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32054:32060" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32114:32125" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32161:32167" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="32234:32286" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="32333:32344" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32380:32386" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32417:32428" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32464:32470" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32497:32508" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32544:32550" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32582:32593" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32629:32635" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32676:32687" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32723:32729" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32764:32775" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32811:32817" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="32878:32889" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="32925:32931" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="33007:33059" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="33103:33114" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33150:33156" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="33193:33204" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33240:33246" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="33295:33306" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33342:33348" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="33388:33399" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33435:33441" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="33493:33504" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33540:33546" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="33603:33614" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33650:33656" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="33726:33778" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="33826:33837" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33873:33879" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="33928:33939" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="33975:33981" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34027:34038" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34074:34080" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34124:34135" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34171:34177" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34233:34244" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34280:34286" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34339:34350" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34386:34392" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34445:34456" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34492:34498" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34552:34563" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34599:34605" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34657:34668" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34704:34710" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34763:34774" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34810:34816" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34870:34881" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="34917:34923" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="34978:34989" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="35025:35031" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="35086:35097" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="35133:35139" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="35200:35211" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="35247:35253" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="35312:35323" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="35359:35365" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="35426:35437" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="35473:35479" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="35579:35631" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="35715:35767" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="35849:35901" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="35995:36047" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="36108:36119" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36155:36161" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36219:36230" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36266:36272" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36327:36338" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36374:36380" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36436:36447" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36483:36489" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36544:36555" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36591:36597" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36651:36662" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36698:36704" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36759:36770" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36806:36812" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36868:36879" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="36915:36921" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="36978:36989" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37025:37031" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37088:37099" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37135:37141" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="37205:37257" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="37312:37323" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37359:37365" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37406:37417" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37453:37459" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37503:37514" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37550:37556" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37601:37612" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37648:37654" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37702:37713" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37749:37755" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37797:37808" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37844:37850" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37889:37900" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="37936:37942" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="37981:37992" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38028:38034" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="38074:38085" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38121:38127" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="38177:38188" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38224:38230" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="38287:38298" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38334:38340" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="38415:38467" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="38538:38590" ph="{...}" />
-            <marker date="1515745426947" expanded="true" signature="38657:38709" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="38750:38761" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38797:38803" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="38851:38862" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38898:38904" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="38951:38962" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="38998:39004" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="39037:39048" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39084:39090" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="39120:39131" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39167:39173" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="39179:39197" ph="/**...*/" />
-            <marker date="1515745426947" expanded="false" signature="39239:39250" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39286:39292" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="39328:39339" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39375:39381" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="39416:39427" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39463:39469" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="39523:39534" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39570:39576" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="39619:39630" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39666:39672" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="39817:39869" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="39926:39937" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="39973:39979" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="40028:40435" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="40076:40091" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="40127:40137" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="40172:40187" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="40223:40233" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="40276:40291" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="40327:40337" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="40368:40383" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="40419:40429" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="40504:41235" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="40696:40711" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="40747:40757" ph=" }" />
-            <marker date="1515745426947" expanded="true" signature="40854:40914" ph="{...}" />
-            <marker date="1515745426947" expanded="false" signature="40953:40968" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="41004:41014" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="41073:41088" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="41124:41134" ph=" }" />
-            <marker date="1515745426947" expanded="false" signature="41168:41183" ph=" { " />
-            <marker date="1515745426947" expanded="false" signature="41219:41229" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3313,60 +3026,109 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+        <state relative-caret-position="567">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="14" column="85" lean-forward="false" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_content_list.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_content_list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/data/Content.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+        <state relative-caret-position="91">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#66#457#0" expanded="true" />
+            <element signature="e#66#545#0" expanded="true" />
+            <element signature="e#1284#2127#0" expanded="false" />
+            <element signature="e#1376#1412#0" expanded="true" />
+            <element signature="e#1452#1486#0" expanded="true" />
+            <element signature="e#1530#1561#0" expanded="true" />
+            <element signature="e#1602#1633#0" expanded="true" />
+            <element signature="e#1675#1708#0" expanded="true" />
+            <element signature="e#1752#1787#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="15">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#66#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>

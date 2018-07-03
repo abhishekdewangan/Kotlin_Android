@@ -63,7 +63,8 @@ class HomeFragment : Fragment(), ContentsFeedAdapter.ContentItemClickListener {
     override fun seeAllContentWithType(type: String) {
         val intent = Intent(context, ContentsActivity::class.java)
         val bundle = Bundle()
-        bundle.putString(Keys.BUNDLE_CONTENT_TYPE, type)
+        bundle.putString(Keys.BUNDLE_CONTENT_TYPE, contentType)
+        bundle.putString(Keys.BUNDLE_CONTENT_FILTER_TYPE, type)
         intent.putExtras(bundle)
         startActivity(intent)
     }

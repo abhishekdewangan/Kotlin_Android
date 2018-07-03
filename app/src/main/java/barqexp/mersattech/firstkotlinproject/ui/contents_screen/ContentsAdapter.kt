@@ -10,6 +10,7 @@ import kotlinx.android.extensions.LayoutContainer
 
 class ContentsAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var contents = listOf<Content>()
+    private var isPaginating = false;
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_content_verticle, null, false)
@@ -26,6 +27,10 @@ class ContentsAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     fun setData(contents: List<Content>) {
         this.contents = contents
         notifyDataSetChanged()
+    }
+
+    fun addLoader(status: Boolean) {
+        isPaginating = status
     }
 
     class ContentViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {

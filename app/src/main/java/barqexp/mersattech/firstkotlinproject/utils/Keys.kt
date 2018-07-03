@@ -28,12 +28,23 @@ class Keys {
 
         /* BUNDLE KEYS */
         const val BUNDLE_CONTENT_TYPE= "CONTENT_TYPE"
+        const val BUNDLE_CONTENT_FILTER_TYPE= "CONTENT_FILTER_TYPE"
 
         /* Query Params Values*/
         const val PARAMS_POPULAR = "popular"
         const val PARAMS_NOW_PLAYING = "now_playing"
         const val PARAMS_TOP_RATED = "top_rated"
         const val PARAMS_UPCOMING = "upcoming"
+
+        /* CONTENT TYPES*/
+        const val CONTENT_TYPE_MOVIE = "movie"
+        const val CONTENT_TYPE_TV = "tv"
+
+        /* LOADING STATUS*/
+        const val LOADING_FRESH = 1
+        const val LOADING_NEXT = 2
+        const val STOP_LOADING = 3
+        const val STOP_PAGINATION = 4
 
     }
 }
