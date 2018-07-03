@@ -80,10 +80,6 @@ class ContentsAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     class ProgressViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
-
-        fun bindData(content: Content) {
-
-        }
     }
 
 }
