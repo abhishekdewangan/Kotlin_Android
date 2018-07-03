@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,6 +30,7 @@ class HomeFragment : Fragment(), ContentsFeedAdapter.ContentItemClickListener {
         contentType = arguments?.getString(Keys.BUNDLE_CONTENT_TYPE, "")!!
         subscribeToContents()
         subscribeToContentLoading()
+        Log.e("contentType", " content Type is ::: $contentType")
         return inflater.inflate(R.layout.home_feed_fragment, null)
     }
 
@@ -60,11 +62,12 @@ class HomeFragment : Fragment(), ContentsFeedAdapter.ContentItemClickListener {
         })
     }
 
-    override fun seeAllContentWithType(type: String) {
+    override fun seeAllContentWithType(sectionTitle: String, sectionType: String) {
         val intent = Intent(context, ContentsActivity::class.java)
         val bundle = Bundle()
         bundle.putString(Keys.BUNDLE_CONTENT_TYPE, contentType)
-        bundle.putString(Keys.BUNDLE_CONTENT_FILTER_TYPE, type)
+        bundle.putString(Keys.BUNDLE_CONTENT_FILTER_TYPE, sectionType)
+        bundle.putString(Keys.BUNDLE_TITLE, sectionTitle)
         intent.putExtras(bundle)
         startActivity(intent)
     }

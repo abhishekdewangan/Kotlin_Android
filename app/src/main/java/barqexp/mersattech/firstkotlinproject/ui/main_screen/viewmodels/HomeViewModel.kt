@@ -5,6 +5,8 @@ import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.util.Log
+import barqexp.mersattech.firstkotlinproject.KotlinApplication
+import barqexp.mersattech.firstkotlinproject.R
 import barqexp.mersattech.firstkotlinproject.data.Contents
 import barqexp.mersattech.firstkotlinproject.network.MoviesServices
 import barqexp.mersattech.firstkotlinproject.network.RetrofitService
@@ -17,22 +19,28 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private val isLoadingLiveData = MutableLiveData<Boolean>()
 
     private suspend fun fetchMovies() {
+        val application = getApplication<KotlinApplication>()
         val movies = arrayListOf<Contents>()
         try {
             val upcomingContents: Contents = moviesServices.getMovies(Keys.PARAMS_UPCOMING, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            upcomingContents.type = Keys.MOVIE_TYPE_UPCOMING;
+            upcomingContents.sectionTitle = application.getString(R.string.coming_soon)
+            upcomingContents.sectionType = Keys.PARAMS_UPCOMING
             movies.add(upcomingContents)
 
             val nowPlayingContents: Contents = moviesServices.getMovies(Keys.PARAMS_NOW_PLAYING, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            nowPlayingContents.type = Keys.MOVIE_TYPE_NOW_PLAYING;
+            nowPlayingContents.sectionTitle = application.getString(R.string.in_theaters)
+            nowPlayingContents.sectionType = Keys.PARAMS_NOW_PLAYING
             movies.add(nowPlayingContents)
 
-            val popularContents: Contents = moviesServices.getMovies(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN,1).await()
-            popularContents.type = Keys.MOVIE_TYPE_POPULAR;
+            val popularContents: Contents = moviesServices.getMovies(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
+            popularContents.sectionTitle = application.getString(R.string.popular_movies)
+            popularContents.sectionType = Keys.PARAMS_POPULAR
             movies.add(popularContents)
 
             val topRatedContents: Contents = moviesServices.getMovies(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            topRatedContents.type = Keys.MOVIE_TYPE_TOP_RATED;
+            topRatedContents.sectionTitle = application.getString(R.string.top_rated_movies)
+            topRatedContents.sectionType = Keys.PARAMS_TOP_RATED
+
             movies.add(topRatedContents)
             contentMap.get(Keys.CONTENT_TYPE_MOVIES)?.postValue(movies)
             isLoadingLiveData.postValue(false)
@@ -43,14 +51,18 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private suspend fun fetchTvShows() {
         val tvShows = arrayListOf<Contents>()
+        val application = getApplication<KotlinApplication>()
         isLoadingLiveData.postValue(true)
         try {
             val popularShows: Contents = moviesServices.getShows(Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            popularShows.type = Keys.TV_SHOW_TYPE_POPULAR;
+            popularShows.sectionTitle = application.getString(R.string.popular_shows)
+            popularShows.sectionType = Keys.PARAMS_POPULAR
             tvShows.add(popularShows)
 
             val topRatedShows: Contents = moviesServices.getShows(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
-            topRatedShows.type = Keys.TV_SHOW_TYPE_TOP_RATED;
+            topRatedShows.sectionTitle = application.getString(R.string.top_rated_shows)
+            popularShows.sectionType = Keys.PARAMS_TOP_RATED
+
             tvShows.add(topRatedShows)
             contentMap.get(Keys.CONTENT_TYPE_SHOWS)?.postValue(tvShows)
             isLoadingLiveData.postValue(false)

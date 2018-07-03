@@ -12,17 +12,19 @@ import barqexp.mersattech.firstkotlinproject.utils.Keys
 import kotlinx.android.synthetic.main.layout_content_list.*
 
 class ContentsActivity : AppCompatActivity() {
-    lateinit var contentType: String
-    lateinit var contentFilterType: String
-    lateinit var adapter: ContentsAdapter
-    lateinit var viewModel: ContentsViewModel
-    private var isRefresh:Boolean = true
+    private lateinit var contentType: String
+    private lateinit var contentFilterType: String
+    private lateinit var activityTitle: String
+    private lateinit var adapter: ContentsAdapter
+    private lateinit var viewModel: ContentsViewModel
+    private var isRefresh: Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_content_list)
         contentType = intent.extras.getString(Keys.BUNDLE_CONTENT_TYPE)
         contentFilterType = intent.extras.getString(Keys.BUNDLE_CONTENT_FILTER_TYPE)
+        activityTitle = intent.extras.getString(Keys.BUNDLE_TITLE)
         initialSetup()
         setAdapter()
         initViewModel()
@@ -31,24 +33,15 @@ class ContentsActivity : AppCompatActivity() {
     }
 
     private fun initialSetup() {
-        val title: String = when (contentType) {
-            Keys.MOVIE_TYPE_TOP_RATED -> getString(R.string.top_rated_movies)
-            Keys.MOVIE_TYPE_POPULAR -> getString(R.string.popular_movies)
-            Keys.MOVIE_TYPE_NOW_PLAYING -> getString(R.string.in_theaters)
-            Keys.MOVIE_TYPE_UPCOMING -> getString(R.string.coming_soon)
-            Keys.TV_SHOW_TYPE_POPULAR -> getString(R.string.popular_shows)
-            Keys.TV_SHOW_TYPE_TOP_RATED -> getString(R.string.top_rated_shows)
-            else -> ""
-        }
 
         toolbar.run {
-            setTitle(title)
+            setTitle(activityTitle)
             setTitleTextColor(ContextCompat.getColor(context, R.color.white))
             setNavigationIcon(R.drawable.ic_back)
             setNavigationOnClickListener({ onBackPressed() })
         }
 
-        refreshLayout.setOnRefreshListener {  }
+        refreshLayout.setOnRefreshListener { }
 
     }
 

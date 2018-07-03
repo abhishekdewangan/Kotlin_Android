@@ -22,13 +22,14 @@ class Keys {
         const val LANGUAGE_US_EN = "en-US";
 
         /* CONTENT TYPES*/
-        const val CONTENT_TYPE_MOVIES = "contents"
+        const val CONTENT_TYPE_MOVIES = "movies"
         const val CONTENT_TYPE_SHOWS = "shows"
 
 
         /* BUNDLE KEYS */
         const val BUNDLE_CONTENT_TYPE= "CONTENT_TYPE"
         const val BUNDLE_CONTENT_FILTER_TYPE= "CONTENT_FILTER_TYPE"
+        const val BUNDLE_TITLE = "TITLE"
 
         /* Query Params Values*/
         const val PARAMS_POPULAR = "popular"

@@ -45,28 +45,19 @@ class ContentsFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             recyclerHorizontalContent.layoutManager = LinearLayoutManager(containerView.context, LinearLayoutManager.HORIZONTAL, false )
             recyclerHorizontalContent.addItemDecoration(RecyclerItemDecorator(RecyclerItemDecorator.ORIENTATION_TYPE_HORIZONTAL))
             recyclerHorizontalContent.adapter = adapter
-            tvSeeAll.setOnClickListener({contentItemClickListener?.seeAllContentWithType(contents.get(adapterPosition).type)})
+            tvSeeAll.setOnClickListener({contentItemClickListener?.seeAllContentWithType(contents.get(adapterPosition).sectionTitle,
+                    contents.get(adapterPosition).sectionType)})
             adapter.contentItemClickListener = contentItemClickListener
         }
 
         fun setData(contentType: Contents) {
             adapter.setData(contentType.results)
-            val typeStr: String = when (contentType.type) {
-                Keys.MOVIE_TYPE_TOP_RATED -> containerView.context.getString(R.string.top_rated_movies)
-                Keys.MOVIE_TYPE_POPULAR -> containerView.context.getString(R.string.popular_movies)
-                Keys.MOVIE_TYPE_NOW_PLAYING -> containerView.context.getString(R.string.in_theaters)
-                Keys.MOVIE_TYPE_UPCOMING -> containerView.context.getString(R.string.coming_soon)
-                Keys.TV_SHOW_TYPE_POPULAR -> containerView.context.getString(R.string.popular_shows)
-                Keys.TV_SHOW_TYPE_TOP_RATED -> containerView.context.getString(R.string.top_rated_shows)
-                else -> ""
-            }
-            tvContentType.setText(typeStr)
-
+            tvContentType.text = contentType.sectionTitle
         }
     }
 
     interface ContentItemClickListener {
-        fun seeAllContentWithType(type: String)
+        fun seeAllContentWithType(sectionTitle: String, sectionType: String)
         fun contentClicked(content: Content)
     }
 

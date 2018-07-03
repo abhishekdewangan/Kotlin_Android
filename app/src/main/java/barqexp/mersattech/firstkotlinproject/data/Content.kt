@@ -34,7 +34,9 @@ data class Contents(
         @SerializedName("results")
         var results: List<Content> = listOf(),
         @Expose(serialize = false)
-        var type: String
+        var sectionTitle: String,
+        @Expose(serialize = false)
+        var sectionType: String
 )
 
 
