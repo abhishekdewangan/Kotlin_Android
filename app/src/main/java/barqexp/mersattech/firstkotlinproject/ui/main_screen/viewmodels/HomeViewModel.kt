@@ -61,7 +61,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
             val topRatedShows: Contents = moviesServices.getShows(Keys.PARAMS_TOP_RATED, Keys.API_KEY, Keys.LANGUAGE_US_EN, 1).await()
             topRatedShows.sectionTitle = application.getString(R.string.top_rated_shows)
-            popularShows.sectionType = Keys.PARAMS_TOP_RATED
+            topRatedShows.sectionType = Keys.PARAMS_TOP_RATED
 
             tvShows.add(topRatedShows)
             contentMap.get(Keys.CONTENT_TYPE_SHOWS)?.postValue(tvShows)

@@ -9,6 +9,7 @@ import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import barqexp.mersattech.firstkotlinproject.R
 import barqexp.mersattech.firstkotlinproject.utils.Keys
+import barqexp.mersattech.firstkotlinproject.utils.RecyclerOnScrollListener
 import kotlinx.android.synthetic.main.layout_content_list.*
 
 class ContentsActivity : AppCompatActivity() {
@@ -52,9 +53,19 @@ class ContentsActivity : AppCompatActivity() {
 
     private fun setAdapter() {
         adapter = ContentsAdapter()
-        recyclerContents.layoutManager = LinearLayoutManager(this)
+        val layoutManager = LinearLayoutManager(this)
+        recyclerContents.layoutManager = layoutManager
         recyclerContents.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         recyclerContents.adapter = adapter
+        recyclerContents.addOnScrollListener(
+                object : RecyclerOnScrollListener(layoutManager) {
+
+                    override fun onLoadMore(page: Int, totalItems: Int): Boolean {
+                        isRefresh = false
+                        viewModel.getContents(isRefresh)
+                        return true;
+                    }
+                })
     }
 
     private fun subscribeToContents() {
@@ -71,8 +82,14 @@ class ContentsActivity : AppCompatActivity() {
                 when (it) {
                     Keys.LOADING_FRESH -> refreshLayout.isRefreshing = true
                     Keys.LOADING_NEXT -> adapter.addLoader(true)
-                    Keys.STOP_LOADING -> refreshLayout.isRefreshing = false
-                    Keys.STOP_PAGINATION -> adapter.addLoader(false)
+                    Keys.STOP_LOADING -> {
+                        isRefresh = false
+                        refreshLayout.isRefreshing = false
+                    }
+                    Keys.STOP_PAGINATION -> {
+                        isRefresh = false
+                        adapter.addLoader(false)
+                    }
                 }
             }
         })
