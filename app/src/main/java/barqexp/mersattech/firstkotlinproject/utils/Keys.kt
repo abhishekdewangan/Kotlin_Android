@@ -7,23 +7,12 @@ class Keys {
         // IMAGE BASE URL
         const val IMAGE_BASE_URL = "http://image.tmdb.org/t/p/w185/"
 
-        /* MOVIES LIST TYPE */
-        const val MOVIE_TYPE_POPULAR = "popular_movies"
-        const val MOVIE_TYPE_NOW_PLAYING = "now_playing_movies"
-        const val MOVIE_TYPE_TOP_RATED = "top_rated_movies"
-        const val MOVIE_TYPE_UPCOMING = "upcoming_movies"
-
-
-        /* TV-SHOWS LIST TYPE*/
-        const  val TV_SHOW_TYPE_POPULAR = "popular_shows"
-        const val TV_SHOW_TYPE_TOP_RATED = "top_rated_shows"
-
         /* LANGUAGE KEYS */
         const val LANGUAGE_US_EN = "en-US";
 
         /* CONTENT TYPES*/
-        const val CONTENT_TYPE_MOVIES = "movies"
-        const val CONTENT_TYPE_SHOWS = "shows"
+        const val CONTENT_TYPE_MOVIES = "movie"
+        const val CONTENT_TYPE_SHOWS = "tv"
 
 
         /* BUNDLE KEYS */
@@ -36,10 +25,6 @@ class Keys {
         const val PARAMS_NOW_PLAYING = "now_playing"
         const val PARAMS_TOP_RATED = "top_rated"
         const val PARAMS_UPCOMING = "upcoming"
-
-        /* CONTENT TYPES*/
-        const val CONTENT_TYPE_MOVIE = "movie"
-        const val CONTENT_TYPE_TV = "tv"
 
         /* LOADING STATUS*/
         const val LOADING_FRESH = 1

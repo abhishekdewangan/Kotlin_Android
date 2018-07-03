@@ -15,7 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3f46ea7-ea2b-44f8-93cd-68cf83cff83a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_loading.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -26,15 +25,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/data/Content.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/data/Content.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/ContentsFeedAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/ContentsFeedAdapter.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" afterPath="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContentsActivity.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContentsActivity.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -70,38 +62,9 @@
       <file leaf-file-name="ContentsViewModel.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_content_verticle.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="60" column="38" lean-forward="false" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-              <folding>
-                <element signature="e#524#542#0" expanded="true" />
-                <element signature="e#1521#1539#0" expanded="true" />
-                <element signature="e#2067#2085#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentsAdapter.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="e#66#545#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -2260,12 +2223,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/viewmodels/HomeViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/ContentsFeedAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/fragments/HomeFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_loading.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_content_verticle.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt" />
       </list>
     </option>
   </component>
@@ -2701,7 +2664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530621799095</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix layout bug in content Adapter">
+      <created>1530629013762</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530629013762</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2711,7 +2681,7 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16882068" sideWeight="0.50803214" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13352273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2723,10 +2693,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24798061" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24798061" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.061079547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35511363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.061079547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20738636" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16882068" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Android WiFi ADB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2785,7 +2755,8 @@
     <MESSAGE value="changed Movies file name to  to Contents" />
     <MESSAGE value="created contents activity to show selected contents list" />
     <MESSAGE value="Created view model for Contents Activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created view model for Contents Activity" />
+    <MESSAGE value="fix layout bug in content Adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix layout bug in content Adapter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3092,14 +3063,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/data/Content.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -3135,14 +3098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/27.1.1/21d073509c5f8d25a1bf274067fa729a1fba8d75/appcompat-v7-27.1.1-sources.jar!/android/support/v7/widget/Toolbar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -3151,14 +3106,6 @@
             <element signature="e#27160#27161#0" expanded="false" />
             <element signature="e#27193#27194#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HomePagerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3181,22 +3128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/ContentsFeedAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -3210,7 +3141,7 @@
         <state relative-caret-position="375">
           <caret line="36" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#66#545#0" expanded="true" />
+            <element signature="e#66#545#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3220,14 +3151,54 @@
         <state relative-caret-position="828">
           <caret line="60" column="38" lean-forward="false" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
           <folding>
-            <element signature="e#524#542#0" expanded="true" />
-            <element signature="e#1521#1539#0" expanded="true" />
-            <element signature="e#2067#2085#0" expanded="true" />
+            <element signature="e#524#542#0" expanded="false" />
+            <element signature="e#1521#1539#0" expanded="false" />
+            <element signature="e#2067#2085#0" expanded="false" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/main_screen/adapters/HomePagerAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/utils/Keys.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/network/MoviesServices.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/barqexp/mersattech/firstkotlinproject/ui/contents_screen/ContentsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

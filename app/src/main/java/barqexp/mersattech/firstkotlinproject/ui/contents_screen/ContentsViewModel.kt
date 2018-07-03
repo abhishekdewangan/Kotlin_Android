@@ -18,8 +18,8 @@ class ContentsViewModel(application: Application, val contentType: String, val c
 
     private suspend fun fetchContents() {
         updateLoadingStatus(true)
-        val contents: Contents = RetrofitService.create().getMovies(
-                Keys.PARAMS_POPULAR, Keys.API_KEY, Keys.LANGUAGE_US_EN, page).await()
+        val contents: Contents = RetrofitService.create().getContents(contentType, contentFilterType,
+                Keys.API_KEY, Keys.LANGUAGE_US_EN, page).await()
         if (null != contentsLiveData.value) {
             contentsLiveData.value!!.addAll(contents.results)
             contentsLiveData.postValue(contentsLiveData.value)
