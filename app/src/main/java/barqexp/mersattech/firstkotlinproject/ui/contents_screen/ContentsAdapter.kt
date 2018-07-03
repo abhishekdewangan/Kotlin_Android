@@ -24,6 +24,9 @@ class ContentsAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return when (viewType) {
             VIEW_TYPE_LOADING -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.item_loading, null, false)
+                val lp = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT)
+                view.layoutParams = lp
                 ProgressViewHolder(view)
             }
             else -> {
@@ -66,8 +69,11 @@ class ContentsAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     class ContentViewHolder(override val containerView: View?) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
         fun bindData(content: Content) {
-            Picasso.get().load(Keys.IMAGE_BASE_URL+content.poster_path).into(imgMoviePoster)
-            tvMovieTitle.text = content.title
+            Picasso.get().load(Keys.IMAGE_BASE_URL + content.poster_path).into(imgMoviePoster)
+            if (content.title.isEmpty())
+                tvMovieTitle.text = content.name
+            else
+                tvMovieTitle.text = content.title
             tvAvgRating.text = content.voteAverage.toString()
             tvReleaseDate.text = content.releaseDate
         }

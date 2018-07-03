@@ -24,7 +24,9 @@ data class Content(
         @SerializedName("vote_average")
         var voteAverage: Float? = null,
         @SerializedName("vote_count")
-        var voteCount: Int = 0)
+        var voteCount: Int = 0,
+        @SerializedName("name")
+        var name: String = "")
 
 data class Contents(
         @SerializedName("total_results")
